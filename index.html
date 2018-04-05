@@ -6,12 +6,9 @@
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   </head>
   <body>
-    <div ng-app="" ng-init="product=['shirts','bag','shoes']">
-         FirstName :<input type="text" placeholder="input your firstname" ng-model="fname"/>
-         LastName :<input type="text" placeholder="input your lastname" ng-model="lname"/>
-         <br>
-         <h1>Product :{{product[0]}}</h1>
+    <div ng-app="myApp" ng-controller="myCtrl">
+         <h1>{{fName + lName}}</h1>
     </div>
-
+    <script src="app.js"></script>
   </body>
 </html>
