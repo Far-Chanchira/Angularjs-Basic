@@ -6,7 +6,10 @@
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   </head>
   <body>
-    <div ng-app="myApp" colortext>
+    <div ng-app="" ng-init="price=50;count=1">
+      Price : <input type="text" ng-model="price" disabled/><br>
+      Amount : <input type="number" ng-model="count"/>
+      <h1>Total = {{price*count}}</h1>
     </div>
     <script src="app.js"></script>
   </body>
