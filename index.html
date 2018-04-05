@@ -6,11 +6,11 @@
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   </head>
   <body>
-    <div ng-app="">
-         Name :<input type="text" placeholder="input your name" ng-model="name"/>
-         LName :<input type="text" placeholder="input your lname" ng-model="lname"/>
+    <div ng-app="" ng-init="fname='Chanchira';lname='Yomchan';color='pink';text='white'">
+         FirstName :<input type="text" placeholder="input your firstname" ng-model="fname"/>
+         LastName :<input type="text" placeholder="input your lastname" ng-model="lname"/>
          <br>
-         <h1>Hello :{{name + lname}}</h1>
+         <h1 style="background-color:{{color}};color:{{text}}">Hello :{{fname + lname}}</h1>
     </div>
 
   </body>
