@@ -6,9 +6,31 @@
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   </head>
   <body>
-    <div ng-app="myApp" ng-controller="myCtrl">
-      <button ng-click="myFunction()">Click</button>
-      <h1>{{count}}</h1>
+    <div ng-app="myApp" >
+        <form>
+            <input type="radio" ng-model="myanimal" value="dog">Dog<br>
+            <input type="radio" ng-model="myanimal" value="cat">Cat<br>
+            <input type="radio" ng-model="myanimal" value="fish">Fish<br>
+            <input type="radio" ng-model="myanimal" value="ant">Ant<br>
+        </form>
+        <div ng-switch="myanimal">
+          <div ng-switch-when="dog">
+            <h1>Dog Title</h1>
+            <p>Dog Content</p>
+          </div>
+          <div ng-switch-when="cat">
+            <h1>Cat Title</h1>
+            <p>Cat Content</p>
+          </div>
+          <div ng-switch-when="fish">
+            <h1>Fish Title</h1>
+            <p>Fish Content</p>
+          </div>
+          <div ng-switch-when="ant">
+            <h1>Ant Title</h1>
+            <p>Ant Content</p>
+          </div>
+        </div>
     </div>
     <script src="app.js"></script>
   </body>
